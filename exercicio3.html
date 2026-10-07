@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva em Restaurante</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; background-color: rosybrown">Reserva em Restaurante</h1>
+        <hr>
+    </header>
+    <br>
+    <main>
+        <form action="#" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome..." required>
+            <br>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
+            <br>
+            <br>
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <br>
+            <br>
+
+            <label for="numero_pessoas">Número de Pessoas</label>
+            <input type="number" id="numero_pessoas" name="numero_pessoas" required>
+            <br>
+            <br>
+
+            <label for="data_reserva">Data da Reserva</label>
+            <input type="date" id="data_reserva" name="data_reserva" required>
+            <br>
+            <br>
+
+            <label for="hora_reserva">Hora da Reserva</label>
+            <input type="time" id="hora_reserva" name="hora_reserva" required>
+            <br>
+            <br>
+
+            <label for="preferencias_alimentares">Preferências Alimentares</label>
+            <input type="checkbox" id="preferencias_alimentares" name="preferencias_alimentares" required>
+            <br>
+
+            <label for="restricoes_alimentares">Restrições Alimentares</label>
+            <input type="checkbox" id="restricoes_alimentares" name="restricoes_alimentares">
+            <br>
+            <br>
+
+            <label for="comentario">Comentários Adicionais</label>
+            <textarea id="comentario" name="comentario" placeholder="Digite seus comentários adicionais..."></textarea>
+            <br>
+            <br>
+
+            <label for="evento">Tipo de Evento</label>
+            <select id="evento" name="evento">
+                <option value="" selected disabled>Selecione...</option>
+                <option value="normal">Normal</option>
+                <option value="especial">Especial</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="necessidades">Necessidades Especiais</label>
+            <input type="checkbox" id="necessidades" name="necessidades" required>
+            <br>
+            <br>
+
+            <label for="preferencia_assento">Preferência de Assento</label>
+            <select name="preferencia_assento" id="preferencia_assento">
+                <option value="" selected disabled>Selecione...</option>
+                <option value="janela">Janela</option>
+                <option value="corredor">Corredor</option>
+                <option value="meia">Meia</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="codigo_promocao">Código de Promoção</label>
+            <input type="text" id="codigo_promocao" name="codigo_promocao">
+            <br>
+            <br>
+
+            <label for="termos_condicoes">Li e concordo com os termos e condições</label>
+            <input type="checkbox" id="termos_condicoes" name="termos_condicoes" required>
+            <br>
+
+            <label for="notificacao">Desejo ser notificado sobre a reserva</label>
+            <input type="checkbox" id="notificacao" name="notificacao">
+            <br>
+            <br>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade...">
+            <br>
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP...">
+            <br>
+            <label for="pais">País</label>
+            <select name="pais" id="pais">
+                <option value="" selected disabled>Selecione...</option>
+                <option value="brasil">Brasil</option>
+                <option value="argentina">USA</option>
+                <option value="chile">Chile</option>
+                <option value="uruguai">Uruguai</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="referancia">Referência</label>
+            <input type="text" id="referancia" name="referancia" placeholder="Digite uma referência...">
+            <br>
+            <br>
+            
+            <input type="submit" value="Fazer Reserva">
+        </form>
+    </main>
+</body>
+</html>

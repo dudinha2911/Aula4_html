@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Avaliação de Produto</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; background-color: greenyellow;">Avaliação de Produto</h1>
+        <hr>
+    </header>
+    <br>
+    <main>
+        <form action="#" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+            <br>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
+            <br>
+            <br>
+
+            <label for="avaliacao">Avaliação</label>
+            <input type="number" id="avaliacao" name="avaliacao" min="1" max="5" required>
+            <br>
+            <br>
+
+            <label for="comentario">Comentário</label>
+            <textarea id="comentario" name="comentario" placeholder="Compartilhe sua experiência com o produto..." required></textarea>
+            <br>
+            <br>
+
+            <label for="recomendaria">Recomendaria?</label>
+            <input type="radio" id="recomendaria" name="recomendaria" value="sim">
+
+            <label for="recomendaria">Sim</label>
+            <input type="radio" id="nao" name="recomendaria" value="nao">
+            <label for="nao">Não</label>
+            <br>
+            <br>
+
+            <label for="opcao">Razão da Avaliação</label>
+            <select name="opcao" id="opcao">
+                <option value="" selected disabled>Selecione...</option>
+                <option value="qualidade">Qualidade</option>
+                <option value="preco">Preço</option>
+                <option value="atendimento">Atendimento</option>
+                <option value="outros">Outros</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="sugestao">Sugestão de Melhoria</label>
+            <textarea id="sugestao" name="sugestao" placeholder="Dê sua sugestão de melhoria..."></textarea>
+            <br>
+            <br>
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" required>
+            <br>
+            <br>
+
+            <label>Gênero:</label>
+            <br>
+            <label for="feminino">Feminino♀️</label>
+            <input type="radio" value="feminino" id="feminino" name="pergunta" required>
+            <br>
+            <label for="masculino">Masculino♂️</label>
+            <input type="radio" value="masculino" id="masculino" name="pergunta" required>
+            <br>
+            <br>
+
+            <label for="satisfacao">Satisfação com o Produto</label>
+            <input type="range" id="satisfacao" name="satisfacao" required>
+            <br>
+            <br>
+
+            <label for="uso">Facilidade de Uso</label>
+            <input type="number" id="uso" name="uso" required>
+            <br>
+            <br>
+
+            <label for="qualidade">Qualidade do Produto</label>
+            <input type="number" id="qualidade" name="qualidade" required>
+            <br>
+            <br>
+
+            <label for="preco">Preço do Produto</label>
+            <input type="float" id="preco" name="preco" required>
+            <br>
+            <br>
+
+            <label for="versao">Versão do Produto</label>
+            <input type="text" id="versao" name="versao" required>
+            <br>
+            <br>
+
+            <label for="localizacao">Localização</label>
+            <input type="text" id="localizacao" name="localizacao" required>
+            <br>
+            <br>
+
+            <label for="data_compra">Data da Compra</label>
+            <input type="date" id="data_compra" name="data_compra" required>
+            <br>
+            <br>
+
+            <label for="origem_compra">Origem da Compra</label>
+            <select name="opcao" id="opcao">
+                <option value="" selected disabled>Selecione...</option>
+                <option value="loja">Loja</option>
+                <option value="online">Online</option>
+                <option value="outros">Outros</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="nivel_satisfacao">Nível de Satisfação</label>
+            <input type="range" id="nivel_satisfacao" name="nivel_satisfacao" required>
+            <br>
+            <br>
+
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </main>
+</body>
+</html>
